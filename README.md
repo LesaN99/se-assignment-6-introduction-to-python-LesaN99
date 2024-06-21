@@ -260,8 +260,8 @@ Answer the following questions based on your understanding of Python programming
 
                 hello.write(f"{line}\n")
     except IOError:
-
         print(f"An error occurred while writing to the file {file_path}.")
+        
         
         Sources/References 
         - Power Learn Project Day 2- Environment set-up,Lesson: How to set up python environment
