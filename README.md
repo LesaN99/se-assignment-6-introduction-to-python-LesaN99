@@ -69,23 +69,33 @@ Answer the following questions based on your understanding of Python programming
    
    # Define variables
    my_integer = 42
+
    my_float = 3.14
-   my_string = "Hello, Python!" 
+
+   my_string = "Hello, Python!"
+
    my_boolean = True
    
    # Print the variables and their types
    
    print("Integer:", my_integer, "| Type:", type(my_integer)) 
+
    print("Float:", my_float, "| Type:", type(my_float))
-   print("String:", my_string, "| Type:", type(my_string)) 
+
+   print("String:", my_string, "| Type:", type(my_string))
+
    print("Boolean:", my_boolean, "| Type:", type(my_boolean))
    
    # Output
    
    Integer: 10 | Type: <class 'int'> 
+
    Float: 3.14 | Type: <class 'float'>
+
    String: Hello, Python! | Type: <class 'str'> 
+
    Boolean: True | Type: <class 'bool'>
+
 
 5. Control Structures:
    - Explain the use of conditional statements and loops in Python. Provide examples of an `if-else` statement and a `for` loop.
@@ -96,14 +106,22 @@ Answer the following questions based on your understanding of Python programming
    - Loops in Python, such as ‘for’ and ‘while’, are used to execute a block of code repeatedly as long as a condition is met. They simplify repetitive tasks by automating the execution of code blocks multiple times.
    
    If-else statement
+
    age = 18 
+
    if age >= 18:
+
      print("You are an adult.") 
+
      else: 
+
      print("You are a minor.")
+
      
      For Loop
+
      for fruits in range(3): 
+
      print("fruits:", fruits)
 
 
@@ -117,15 +135,20 @@ Answer the following questions based on your understanding of Python programming
    - Python functions provide clarity.
    
    def sum_two_numbers(a, b):
+
           return a + b 
+
           result = sum_two_numbers(3, 5)
+
           print("sum:", result)
+
                Sum = 8
                
    - Function definition - Defines a sum_two_numbers function that accepts two parameters  ‘a’ and ‘b’.
    - Function body - returns the sum of ‘a’ + ‘b’ when the function is called.
    - Calling the function - ‘result = sum_two_numbers(3, 5) calls the sum_two_numbers function with numbers 3 and 5.
    - Output - print(“sum:”, result) prints results of the function call, which is 8.
+
 
 7. Lists and Dictionaries:
    - Describe the differences between lists and dictionaries in Python. Write a script that creates a list of numbers and a dictionary with some key-value pairs, then demonstrates basic operations on both.
@@ -135,11 +158,16 @@ Answer the following questions based on your understanding of Python programming
    - A list is an ordered collection of items, whereas a dictionary is an unordered data collection in a key: value pair.
    
    numbers = [1, 2, 3, 4, 5] 
+
      print("List:", numbers)
+
      numbers.append(6) 
+
     print("After append:", numbers)
+
     
     person = {"name": "Alice", "age": 30}
+
       print("Dictionary:", person)
 
 
@@ -153,15 +181,23 @@ Answer the following questions based on your understanding of Python programming
    E.g. 
    
    def divide_numbers(a,  b):
+
    try:
+
      result = a / b
+
      print(“resultt:”, result)
+
    except ZeroDivisionError:
+
      print(“Error: Division by zero is not allowed.”)
+
    finally:
+
      print(“Execution complete.”)
       
       def  divide_numbers(5, 0)
+
 
 9. Modules and Packages:
    - Explain the concepts of modules and packages in Python. How can you import and use a module in your script? Provide an example using the `math` module.
@@ -176,10 +212,15 @@ Answer the following questions based on your understanding of Python programming
    E.g 
    
    Import math
+
    number = 16 
+
    sqrt_value = math.sqrt(number) 
+
    print("Square root of", number, "is", sqrt_value)
+
    Square root of 16 is 4
+
 
 10. File I/O:
     - How do you read from and write to files in Python? Write a script that reads the content of a file and prints it to the console, and another script that writes a list of strings to a file.
@@ -194,13 +235,20 @@ Answer the following questions based on your understanding of Python programming
     read_file('C:\Users\Palesa\Documents\hello.txt')
 
     def hello(file_path):
+
     try:
+
         with open(file_path, 'r') as hellofile:
+
             content = hello.read()
+
             print(content)
+
     except FileNotFoundError:
+
         print(f"The file {file_path} does not exist.")
     except IOError:
+
         print(f"An error occurred while reading the file {file_path}.")
 
       # write_to_hello.txt
@@ -209,15 +257,17 @@ Answer the following questions based on your understanding of Python programming
     try:
         with open(file_path, 'w') as hellofile:
             for line in lines:
+
                 hello.write(f"{line}\n")
     except IOError:
+
         print(f"An error occurred while writing to the file {file_path}.")
         
         Sources/References 
         - Power Learn Project Day 2- Environment set-up,Lesson: How to set up python environment
         - geeksforgeeks.org
         - datacamp.org
-         almabetter.com
+        - almabetter.com
         - w3schools.com
 
 
